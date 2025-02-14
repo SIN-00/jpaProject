@@ -17,7 +17,7 @@ public class Member {
     @Column(name = "TEAM_ID")
     private Long teamId;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
     public Long getId() {
